@@ -1,10 +1,16 @@
-import java.util.*;
-import java.io.*;
-import java.math.*;
+import javax.swing.SwingUtilities;
+
+
 public class Main {
 
 	public static void main(String[] args) {
-	
-		new Window();
+		SwingUtilities.invokeLater(new Runnable() {
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				new Window();
+			}
+		});
 	}
 }
